@@ -8,6 +8,35 @@ body{
     min-width: 1080px;
 }
 
+/* --------------------- Botão Padrão --------------------- */
+
+.btn-default input{
+    min-width: 150px;
+    margin-right: 5px;
+    border-radius: 25px;
+    transition: all 0.35s;
+    font-size: 18px;
+    background-color: #CF2B3E;
+    font-family: inherit;
+    padding: 10px 20px;
+    color:#F7F7F7;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CF2B3E;
+}
+
+.btn-default input:hover{
+    background-color: #F7F7F7;
+    color:#CF2B3E;
+    cursor: pointer;
+}
+
+input,textarea:focus{
+    outline-style: none;
+}
+
+/* --------------------- Barra de Navegação --------------------- */
+
 #nav-bar {
     position: fixed;
     left: 0;
@@ -80,9 +109,14 @@ li #nav-pedido:hover{
     border-color: #CF2B3E;
 }
 
+/* --------------------- Conteúdo --------------------- */
+
 .content{
     margin-top: 200px;
+    margin-bottom: 200px;
 }
+
+/* --------------------- Imagem de Destaque --------------------- */
 
 .img-dest{
     padding: 0.83em;
@@ -141,6 +175,8 @@ li #nav-pedido:hover{
     background-color: transparent;
 }
 
+/* --------------------- Conteúdo Principal --------------------- */
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -178,6 +214,12 @@ main .main-content{
     color: #252323;
 }
 
+.main-content li{
+    font-weight: bold;
+    font-size: 20px;
+    color: #252323;
+}
+
 main #promotions{
     right: 0px;
     max-width: 500px;
@@ -188,6 +230,241 @@ main #promotions{
     color: #FFEDEF;
     align-content: center;
 }
+
+/* --------------------- Tabela de Preços --------------------- */
+
+
+.main-content  table,td,th {
+    border: 1px solid #FFEDEF;
+    border-collapse: collapse;
+}
+
+.main-content table th{
+    min-width: 200px;
+    padding: 20px;
+    background-color: #CF2B3E;
+    color: #F7F7F7;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main-content table td{
+    text-align: center;
+    padding: 18px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #252323;
+    display: table-cell;
+    vertical-align: inherit;
+    box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
+    border-radius: 5px;
+}
+
+/* --------------------- Formulário de Login --------------------- */
+
+.main-content legend{
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.main-content fieldset{
+    border-color:#F7F7F7;
+    border-radius: 25px;
+}
+
+.main-content #login-form{
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main-content #login-form img{
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+.main-content .text-input input,textarea{
+    color: #252323;
+    font-family: inherit;
+    border-style: inset;
+    border-width: 1px;
+    min-width: 300px;
+    padding: 5px;
+    margin: 8px;
+    font-size: 16px;
+    border-color: #F7F7F7;
+}
+
+.main-content .text-input textarea{
+    min-height: 100px;
+    min-width: 400px;
+}
+
+#login-form #buttons {
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#login-form #btn-login{
+    width: 50%;
+    text-align: right;
+}
+
+#login-form #btn-clear{
+    width: 50%;
+    text-align: left;
+}
+
+#login-form #btn-clear input{
+    min-width: 150px;
+    margin-left: 5px;
+    transition: all 0.35s;
+    font-size: 18px;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 10px 20px;
+    color:#CF2B3E;
+    border: none;
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+}
+
+#login-form #btn-clear input:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#login-form #btn-clear input:enabled{
+    border: none;
+}
+
+#login-form #btn-login input{
+    display: initial;
+}
+
+#login-form a{
+    transition: all 0.35s;
+    text-decoration: none;
+    color:#252323;
+}
+
+#login-form a:hover{
+    text-decoration: underline;
+}
+
+/* --------------------- Formulário de Mensagem --------------------- */
+
+#message-form{
+    text-align:start;
+}
+
+#message-send{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --------------------- Map --------------------- */
+
+#map{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#map iframe{
+    display: block;
+    width:100%;
+    height: 500px;
+    border: none;
+    margin: none;
+}
+
+#map address{
+    font-size: 16px;
+    text-align: center;
+    color: #252323;
+}
+
+/* --------------------- Formulário de Registro --------------------- */
+
+.main-content #register-form{
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #252323;
+}
+
+.main-content #register-form img{
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+#register-form #buttons {
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#register-form #btn-register{
+    width: 50%;
+    text-align: right;
+}
+
+#register-form #btn-clear{
+    width: 50%;
+    text-align: left;
+}
+
+#register-form #btn-clear input{
+    min-width: 150px;
+    margin-left: 5px;
+    transition: all 0.35s;
+    font-size: 18px;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 10px 20px;
+    color:#CF2B3E;
+    border: none;
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+}
+
+#register-form #btn-clear input:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#register-form #btn-clear input:enabled{
+    border: none;
+}
+
+#register-form #btn-register input{
+    display: initial;
+}
+
+#register-form a{
+    transition: all 0.35s;
+    text-decoration: none;
+    color:#252323;
+}
+
+#register-form a:hover{
+    text-decoration: underline;
+}
+
+.check-input{
+    margin-top: 20px;
+}
+
+/* --------------------- Promoções --------------------- */
 
 #promotions h3{
     text-align: center;
@@ -211,9 +488,10 @@ main #promotions{
     transform: scale(1.1);
 }
 
+/* --------------------- Rodapé --------------------- */
+
 footer{
     background-color: #F7F7F7;
-    margin-top: 50px;
 }
 
 #social{

@@ -34,31 +34,64 @@
     <div class="content">
         <main>
             <section class="main-content">
-                <h2> <img src="img/icons/enter.png" alt="book.png"> Cadastro</h2>
+                <h2> <img src="img/icons/enter.png" alt="enter.png"> Cadastro</h2>
                 <fieldset>
-                <legend>Faça seu Login</legend>
-                <form action="" method="POST">
-                    <div>
-                        <label for="email">E-mail</label><br>
-                        <input type="email" id="email" name="field_email" placeholder="example@domain.com"><br>
+                <form action="" method="POST" id="register-form">
+                    <div class="text-input">
+                        <label for="name"><img src="img/icons/name.png" alt="name.png"></label>
+                        <input type="text" id="name" name="field_name" placeholder="Nome Completo" >
+                    </div>
+
+                    <div class="text-input">
+                        <label for="email"><img src="img/icons/mail.png" alt="e-mail.png"> </label>
+                        <input type="email" id="email" name="field_email" placeholder="E-mail"><br>
+                    </div>
+
+                    <div class="text-input" id="birth-date">
+                        <label for="birth-date"><img src="img/icons/calendar.png" alt="calendar.png"> </label>
+                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birth-date" name="field_birth" placeholder="Data de Nascimento"><br>
                     </div>
     
-                    <div>
-                        <label for="password">Senha</label><br>
-                        <input type="password" id="password" name="field_password"><br>
+                    <div class="text-input"> 
+                        <label for="password"><img src="img/icons/padlock.png" alt="password.png"> </label>
+                        <input type="password" id="password" name="field_password" placeholder="Senha"><br>
                     </div>
-    
-                    <div>
-                        <input type="submit" value="Fazer Login">
+
+                    <div class="text-input"> 
+                        <label for="confirm-password"><img src="img/icons/padlock.png" alt="password.png"> </label>
+                        <input type="password" id="confirm-password" name="field_confirm-password" placeholder="Confirme sua senha"><br>
                     </div>
-    
-                    <div>
-                        <input type="reset" value="Limpar Dados"><br>
+
+                    <div class="text-input"> 
+                        <label for="bairro"><img src="img/icons/local.png" alt="local.png"> </label>
+                        <input type="text" id="bairro" name="field_bairro" placeholder="Bairro"><br>
                     </div>
+
+                    <div class="text-input"> 
+                        <label for="address"><img src="img/icons/local.png" alt="local.png"> </label>
+                        <input type="text" id="address" name="field_address" placeholder="Endereço (Rua - Nº)"><br>
+                    </div>
+
+                    <div class="check-input">
+                        <input type="checkbox" name="field_promo1" value="sim">
+                        <label>Quero receber e-mails promocionais da Pally</label>
+                    </div>
+                
+                    <div id="buttons">
+                        <div class="btn-default" id="btn-register">
+                            <input type="submit" value="Entrar"> <br>
+                        </div>
+        
+                        <div id="btn-clear">
+                            <input type="reset" value="Limpar Dados"><br>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="cliente.html">Já possuo cadastro</a>
                 </form>
-                <a href="cadastro.html">Faça seu Cadastro</a>
                 </fieldset>
             </section>
+
 
             <!-- Promoções -->
             <aside id="promotions">
