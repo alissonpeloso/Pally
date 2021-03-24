@@ -554,15 +554,14 @@ footer #infos #text{
 }
 
 @media only screen and (max-width: 1100px){
-    #links_nav{
-        margin: 0;
-        top: 0;
+    #nav{
+        width: 100%;
         transform: translateX(-110vw);
         transition: 0.4s;
         background-color: #F7F7F7;
     }
 
-    #links_nav.show {
+    #nav.show {
         transform: translateX(0px);
         transition: 0.4s;
     }
@@ -586,7 +585,7 @@ footer #infos #text{
         flex-direction: row;
     }
 
-    #nav-bar nav{
+    #nav nav{
         width: 100%;
         margin: 0;
         display: block;
