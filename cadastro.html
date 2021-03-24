@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<script src="javascript/script.js"></script>
+
 <body>
     <div id="nav-bar">
+        <!-- Botão Menu -->
+        <div class="toggle" onclick="clkmenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
         <!-- Cabeçalho -->
         <header>
             <a href="index.html"><img src="img/logo/Pally_logo.png" alt="logo Pally" id="header-logo"></a>
@@ -20,14 +29,16 @@
     
         <!-- Barra de navegação -->
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="precos.html">Preços</a></li>
-                <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="cliente.html">Cliente</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a id="nav-pedido" href="pedido.html">Faça seu Pedido</a></li>
-            </ul>
+            <div id="links_nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="precos.html">Preços</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="cliente.html">Cliente</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a id="nav-pedido" href="pedido.html">Faça seu Pedido</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 
@@ -79,7 +90,7 @@
                 
                     <div id="buttons">
                         <div class="btn-default" id="btn-register">
-                            <input type="submit" value="Entrar"> <br>
+                            <input type="submit" value="Cadastrar"> <br>
                         </div>
         
                         <div id="btn-clear">

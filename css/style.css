@@ -5,7 +5,6 @@ body{
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    min-width: 1080px;
 }
 
 /* --------------------- Botão Padrão --------------------- */
@@ -38,16 +37,17 @@ input,textarea:focus{
 /* --------------------- Barra de Navegação --------------------- */
 
 #nav-bar {
+    transition: all 0.35s;
     position: fixed;
     left: 0;
     top: 0;
     background-color: #F7F7F7;
-    height: 200px;
+    height: 20vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
-    box-sizing: border-box;
+    box-sizing: content-box;
     position: fixed;
 }
 
@@ -58,10 +58,11 @@ header{
 }
 
 #header-logo{
-    width: 160px;
+    width: 18vh;
 }
 
 #nav-bar nav{
+    width: 70%;
     align-self: flex-end;
     margin: 0px 25px 10px auto;
 }
@@ -71,11 +72,13 @@ header{
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #nav-bar li{
+    display: block;
     align-self: center;
-    padding: 10px 40px;
+    padding: 10px;
 }
 
 #nav-bar a{
@@ -112,8 +115,8 @@ li #nav-pedido:hover{
 /* --------------------- Conteúdo --------------------- */
 
 .content{
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 /* --------------------- Imagem de Destaque --------------------- */
@@ -479,7 +482,7 @@ main #promotions{
 
 #promotions #moto-img{
     transition: all 0.35s;
-    width: 180px;
+    width: 25%;
     margin: 100px auto;
     display: block;
 }
@@ -548,4 +551,333 @@ footer #infos #text{
     text-decoration: none;
     font-weight: bold;
     color: #F7F7F7;
+}
+
+@media only screen and (max-width: 1100px){
+    #links_nav{
+        margin: 0;
+        top: 0;
+        transform: translateX(-110vw);
+        transition: 0.4s;
+        background-color: #F7F7F7;
+    }
+
+    #links_nav.show {
+        transform: translateX(0px);
+        transition: 0.4s;
+    }
+
+    header{
+        display: flex;
+        height: 95%;
+        box-sizing: border-box;
+        align-self: flex-end;
+        margin: auto 10px auto auto;
+        align-items: flex-end;
+    }
+
+    #header-logo{
+        width: auto;
+        height: 13vh;
+    }  
+
+    #nav-bar{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #nav-bar nav{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    #nav-bar ul{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+
+    .toggle {
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #F7F7F7;
+        margin: 0;
+        align-self: flex-end;
+    }
+      
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color:#CF2B3E;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 25px;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    section.main-content{
+        max-width: 100%;
+        min-width: 0px;
+    }
+
+    #social img{
+        margin: 0 15px;
+    }
+
+    .main-content table th{
+        min-width: 150px;
+        font-size: 18px;
+    }
+    
+    .main-content table td{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .content{
+        margin-bottom: 0;
+    }
+
+    .img-dest h1{
+        font-size: 40px;
+    }
+
+    main .main-content{
+        padding: 20px;
+    }
+
+    main #promotions{
+        border-radius: 0;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .main-content h2{
+        font-size: 26px;
+    }
+    
+    .main-content h2 img{
+        width: 40px;
+    }
+
+    .main-content p{
+        font-size: 16px;
+    }
+
+    .main-content li{
+        font-size: 16px;
+    }
+
+    #promotions h3{
+        font-size: 22px;
+    }
+    
+    #promotions p{
+        font-size: 14px;
+    }
+    
+    #promotions #moto-img{
+        width: 40%;
+        margin: 30px auto;
+    }
+
+    footer #infos{
+        font-size: 12px;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+    
+    footer #infos #footer-logo{
+        width: 18vh;
+    }
+    
+    footer #infos #logo{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    footer #infos #text{
+        width: 100%;
+        margin: 0;
+        text-align: center;    
+    }
+    
+    #copy{
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    #copy a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #F7F7F7;
+    }
+
+    #social{
+        display: none;
+    }
+
+    div#infos{
+        padding: 30px;
+        margin: 0;
+    }
+
+    .main-content table th{
+        min-width: 0px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .main-content table td{
+        font-size: 10px;
+        padding: 10px;
+    }
+
+
+
+    .main-content legend{
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .main-content #login-form{
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .main-content #login-form img{
+        width: 20px;
+    }
+    
+    .main-content .text-input input,textarea{
+        min-width: 5px;
+        padding: 3px;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .main-content .text-input textarea{
+        min-height: 50px;
+        min-width: 50px;
+    }
+    
+    #login-form #buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 18px 0;
+    }
+    
+    #login-form #btn-login{
+        width: auto;
+        text-align: center;
+    }
+    
+    #login-form #btn-clear{
+        width: auto;
+        text-align: center;
+    }
+    
+    #login-form #btn-clear input{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    #login-form #btn-login input{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    /* --------------------- Formulário de Mensagem --------------------- */
+    
+    #message-form{
+        text-align:start;
+    }
+    
+    #message-send{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-default input{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* --------------------- Map --------------------- */
+
+    #map iframe{
+        width:100%;
+        height: 40vh;
+    }
+
+    #map address{
+        font-size: 14px;
+    }
+
+    /* --------------------- Formulário de Cadastro --------------------- */
+
+    .main-content #register-form{
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .main-content #register-form img{
+        width: 20px;
+    }
+    
+    #register-form #buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 18px 0;
+    }
+    
+    #register-form #btn-register{
+        width: auto;
+        text-align: center;
+    }
+    
+    #register-form #btn-clear{
+        width: auto;
+        text-align: center;
+    }
+    
+    #register-form #btn-clear input{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    #register-form #btn-register input{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    .check-input{
+        margin-top: 20px;
+    }
+
+    #chat{
+        display: none;
+    }
 }
