@@ -553,11 +553,136 @@ footer #infos #text{
     color: #F7F7F7;
 }
 
+#chat{
+    bottom: -400px;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    background-color: white;
+    box-shadow: rgb(6 19 43 / 25%) 0px 0px 3px, rgb(6 19 43 / 3%) 3px 3px 3px, rgb(6 19 43 / 3%) 3px 0px 6px, rgb(6 19 43 / 4%) -2px 2px 5px, rgb(6 19 43 / 2%) 3px 2px 5px, rgb(6 19 43 / 1%) 0px 2px 2px;
+    border-radius: 15px 15px 0px 0px;
+    transition: 0.4s;
+}
+
+#chat.minimized{
+    transform: translateY(337px);
+}
+
+#chat.closed{
+    transform: translateY(400px);
+}
+
+#chat #header{
+    color: #F7F7F7;
+    padding: 1px 15px;
+    background-color: #CF2B3E;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#chat #header h4{
+    width: 100%;
+}
+
+.close_button, .minimize_button{
+    border-radius: 25px;
+    transition: all 0.2s;
+    width: 23px;
+    margin-left: 3px;
+    text-align: center;
+    padding: 2px;
+}
+
+.close_button:hover, .minimize_button:hover{
+    cursor: pointer;
+    background-color: #F7F7F7;
+    color: #CF2B3E;
+}
+
+#chat #content{
+    padding: 1px 15px;
+    height: 67%;
+}
+
+#message{
+    display: flex;
+    justify-content: space-between;
+}
+
+#message label{
+    width: 80%;
+    display: block;
+}
+
+#send_message {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: none;
+    width: 90%;
+}
+
+#send_button{
+    display: block;
+    width: 25px;
+    margin-right: 20px;
+}
+
+#send_button:hover{
+    cursor: pointer;
+}
+
+#chat_button{
+    width: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 20px;
+    background-color: #CF2B3E;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgb(6 19 43 / 25%) 0px 0px 3px;
+    transition: all 0.4s;
+}
+
+#chat_button.hide{
+    display: none;
+}
+
+#chat_button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#chat_button p{
+    display: block;
+    margin: 0px;
+    color: #F7F7F7;
+    font-weight: bold;
+}
+
+#chat_button img{
+    width: 20px;
+}
+
+#whatsapp_button{
+    display: none;
+}
+
 @media only screen and (max-width: 1100px){
     #nav-bar {
         height: 16vh;
         width: 100%;
         flex-direction: row;
+    }
+
+    .img-dest{
+        height: 84vh;
     }
 
     .content{
@@ -902,7 +1027,43 @@ footer #infos #text{
         margin-top: 20px;
     }
 
-    #chat{
+    #chat, #chat_button{
         display: none;
+    }
+
+    #whatsapp_button{
+        width: 80px;
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+        padding: 10px;
+        background-color: #57cd63;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgb(6 19 43 / 25%) 0px 0px 3px;
+        transition: all 0.4s;
+        align-items: center;
+    }
+    
+    #whatsapp_button:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    #whatsapp_button p{
+        display: block;
+        font-size: 12px;
+        margin: 0px;
+        color: #F7F7F7;
+        font-weight: bold;
+    }
+    
+    #whatsapp_button img{
+        width: 18px;
+    }
+
+    #whatsapp_buton a{
+        display: block;
     }
 }

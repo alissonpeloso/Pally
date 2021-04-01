@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<script src="javascript/script.js"></script>
-
 <body>
     <div id="nav-bar">
         <!-- Botão Menu -->
@@ -84,8 +82,29 @@
     </div>
 
     <!-- Chat -->
-    <div id="chat">
-        <p>Clique aqui para falar com os atendentes</p>
+    <div id="chat" class="closed">
+        <div id="header">
+            <h4>Envie-nos uma Mensagem</h4>
+                <span class="minimize_button" onclick="minimize_chat()">&minus;</span>
+                <span class="close_button" onclick="close_chat()">&#x2715;</span>
+        </div>
+        <div id="content">  
+        </div>
+        <div id="bar"><hr></div>
+        <div id="message">
+            <label for="send_message"><input id="send_message" type="text" placeholder="Escreva sua Mensagem"></label>
+            <img id="send_button" src="img/icons/send.svg" alt="send_button">
+        </div>
+    </div>
+    <div id="chat_button" onclick="open_chat(this)">
+        <img src="img/icons/messenger.svg" alt="message_ballon">
+        <p>Chat</p>
+    </div>
+
+    <!-- Botão do Whatsapp (Mobile) -->
+    <div id="whatsapp_button">
+        <a href="https://wa.link/775drv" target="_blank"><img src="img/icons/whatsapp.svg" alt="whatsapp_logo"></a>
+        <p>Pedir pelo <br> Whatsapp</p>
     </div>
 
     <!-- Rodapé -->
@@ -115,5 +134,7 @@
     </footer>
     
 </body>
+
+<script src="javascript/script.js"></script>
 
 </html>
