@@ -45,14 +45,14 @@
         <main>
             <section class="main-content">
                 <h2> <img src="img/icons/livro-de-contato.png" alt="book.png"> Contato</h2>
-                <form action="" id="message-form">
+                <form action="" id="message-form" onsubmit="return check_message()">
                     <div class="text-input">
                         <label for="uname"></label>
                         <input type="text" id="uname" name="uname" placeholder="Nome"><br>
                     </div>
                     <div class="text-input">
                         <label for="umail"></label>
-                        <input type="text" id="umail" name="umail" placeholder="E-mail"><br>
+                        <input type="email" id="umail" name="umail" placeholder="E-mail"><br>
                     </div>
                     <div class="text-input">
                         <label for="usubject"></label>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="text-input">
                         <label for="umessage"></label>
-                        <textarea name="mensagem" id="msg" placeholder="Escreva sua mensagem"></textarea>
+                        <textarea name="mensagem" id="umessage" placeholder="Escreva sua mensagem"></textarea>
                     </div>
                     <div class="btn-default" id="message-send">
                         <input type="submit" value="Enviar Mensagem"><br>
@@ -138,7 +138,5 @@
     </footer>
     
 </body>
-
 <script src="javascript/script.js"></script>
-
 </html>

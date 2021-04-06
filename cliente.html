@@ -46,15 +46,15 @@
                 <h2> <img src="img/icons/enter.png" alt="book.png"> Área do Cliente</h2>
                 <fieldset>
                 <legend>Faça seu Login</legend>
-                <form action="" method="POST" id="login-form">
+                <form action="" method="POST" id="login-form" onsubmit="return check_login()">
                     <div class="text-input">
                         <label for="email"><img src="img/icons/mail.png" alt="e-mail.png"> </label>
-                        <input type="email" id="email" name="field_email" placeholder="E-mail"><br>
+                        <input type="email" id="email_login" name="field_email" placeholder="E-mail"><br>
                     </div>
     
                     <div class="text-input"> 
                         <label for="password"><img src="img/icons/padlock.png" alt="password.png"> </label>
-                        <input type="password" id="password" name="field_password" placeholder="Senha"><br>
+                        <input type="password" id="password_login" name="field_password" placeholder="Senha"><br>
                     </div>
                     
                     <div id="buttons">
@@ -134,7 +134,5 @@
     </footer>
     
 </body>
-
 <script src="javascript/script.js"></script>
-
 </html>

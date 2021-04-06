@@ -45,45 +45,47 @@
             <section class="main-content">
                 <h2> <img src="img/icons/enter.png" alt="enter.png"> Cadastro</h2>
                 <fieldset>
-                <form action="" method="POST" id="register-form">
+                <form action="" method="POST" id="register-form" onsubmit="return check_register()">
                     <div class="text-input">
                         <label for="name"><img src="img/icons/name.png" alt="name.png"></label>
-                        <input type="text" id="name" name="field_name" placeholder="Nome Completo" >
+                        <input type="text" id="name_register" name="field_name" placeholder="Nome Completo" >
                     </div>
 
                     <div class="text-input">
                         <label for="email"><img src="img/icons/mail.png" alt="e-mail.png"> </label>
-                        <input type="email" id="email" name="field_email" placeholder="E-mail"><br>
+                        <input type="email" id="email_register" name="field_email" placeholder="E-mail"><br>
                     </div>
 
                     <div class="text-input" id="birth-date">
                         <label for="birth-date"><img src="img/icons/calendar.png" alt="calendar.png"> </label>
-                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birth-date" name="field_birth" placeholder="Data de Nascimento"><br>
+                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birthDate_register" name="field_birth" placeholder="Data de Nascimento"><br>
                     </div>
     
                     <div class="text-input"> 
                         <label for="password"><img src="img/icons/padlock.png" alt="password.png"> </label>
-                        <input type="password" id="password" name="field_password" placeholder="Senha"><br>
+                        <input type="password" id="password_register" name="field_password" placeholder="Senha"><br>
                     </div>
 
                     <div class="text-input"> 
                         <label for="confirm-password"><img src="img/icons/padlock.png" alt="password.png"> </label>
-                        <input type="password" id="confirm-password" name="field_confirm-password" placeholder="Confirme sua senha"><br>
+                        <input type="password" id="confirm-password_register" name="field_confirm-password" placeholder="Confirme sua senha"><br>
                     </div>
 
                     <div class="text-input"> 
                         <label for="bairro"><img src="img/icons/local.png" alt="local.png"> </label>
-                        <input type="text" id="bairro" name="field_bairro" placeholder="Bairro"><br>
+                        <input type="text" id="bairro_register" name="field_bairro" placeholder="Bairro"><br>
                     </div>
 
                     <div class="text-input"> 
                         <label for="address"><img src="img/icons/local.png" alt="local.png"> </label>
-                        <input type="text" id="address" name="field_address" placeholder="Endereço (Rua - Nº)"><br>
+                        <input type="text" id="address_register" name="field_address" placeholder="Endereço (Rua - Nº)"><br>
                     </div>
 
                     <div class="check-input">
-                        <input type="checkbox" name="field_promo1" value="sim">
-                        <label>Quero receber e-mails promocionais da Pally</label>
+                        <label>
+                            <input type="checkbox" name="field_promo1" value="sim">
+                            Quero receber e-mails promocionais da Pally
+                        </label>
                     </div>
                 
                     <div id="buttons">
@@ -162,9 +164,7 @@
             <p>© Copyright 2020. Todos os direitos reservados. | Feito com ❤ por <a href="https://github.com/alissonpeloso" target="_blank">Alisson Peloso</a></p>
         </div>
     </footer>
-    
+
 </body>
-
 <script src="javascript/script.js"></script>
-
 </html>
