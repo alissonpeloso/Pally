@@ -712,13 +712,21 @@ select#size_pizza:focus{
     box-shadow: rgb(6 19 43 / 20%) 0px 0px 15px;
 }
 
-#flavor_selected{
+.flavor_selected{
+    transition: all 0.35s;
+    padding: 30px;
+    border-style: solid;
+    border-color:#CF2B3E;
+    border-width: 1px;
+    border-radius: 25%;
+    margin: 10px;
+    text-align: center;
     background-color: #CF2B3E;
     color: #F7F7F7;
 }
 
-.flavor input[type = "checkbox"]{
-    /* display: none;   */
+.flavor input[type = "checkbox"], .flavor_selected input[type = "checkbox"]{
+    display: none;  
 }
 
 .flavor_img{

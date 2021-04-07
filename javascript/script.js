@@ -159,10 +159,12 @@ function addOrder() {
 }
 
 function select_flavor(element) {
-    if(element.id == "flavor_selected"){
-        // element.id = "";
+    if(element.classList.value == 'flavor_selected'){
+        element.classList.value = "flavor";
+        return;
     }
     else{
-        element.id = "flavor_selected";
+        element.classList.value = "flavor_selected";
+        return;
     }
 }
