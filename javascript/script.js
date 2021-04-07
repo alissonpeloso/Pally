@@ -119,6 +119,7 @@ function selectPizzaSize(){
     for (i = 0; i < lista.length; i++)
         lista[i].checked = false;
     document.getElementById("flavorNum").innerText = 0;
+    select_flavor();
 }
 
 function countFlavors() {
@@ -158,13 +159,32 @@ function addOrder() {
     }
 }
 
-function select_flavor(element) {
-    if(element.classList.value == 'flavor_selected'){
-        element.classList.value = "flavor";
-        return;
-    }
-    else{
-        element.classList.value = "flavor_selected";
-        return;
-    }
+function select_flavor() {
+    checkboxes = document.querySelectorAll("input[type=checkbox]");
+    flavors = document.querySelectorAll("label");
+
+    console.log(checkboxes);
+    console.log(flavors);
+
+
+    for (i = 0; i < checkboxes.length; i++){
+        if(checkboxes[i].checked){   
+            flavors[i].classList.value = "flavor_selected";
+        }
+        else{
+            flavors[i].classList.value = "flavor";
+        }
+    }    
+    return;
+
+
+
+    // if(element.classList.value == 'flavor_selected'){
+    //     element.classList.value = "flavor";
+    //     return;
+    // }
+    // else{
+    //     element.classList.value = "flavor_selected";
+    //     return;
+    // }
 }
