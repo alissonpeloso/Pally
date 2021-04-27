@@ -1,0 +1,1145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------- Botão Padrão --------------------- */
+
+.btn-default input{
+    min-width: 150px;
+    margin-right: 5px;
+    border-radius: 25px;
+    transition: all 0.35s;
+    font-size: 18px;
+    background-color: #CF2B3E;
+    font-family: inherit;
+    padding: 10px 20px;
+    color:#F7F7F7;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CF2B3E;
+}
+
+.btn-default input:hover{
+    background-color: #F7F7F7;
+    color:#CF2B3E;
+    cursor: pointer;
+}
+
+input,textarea:focus{
+    outline-style: none;
+}
+
+/* --------------------- Barra de Navegação --------------------- */
+
+#nav-bar {
+    transition: all 0.35s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #F7F7F7;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
+    box-sizing: content-box;
+    position: fixed;
+}
+
+header{
+    box-sizing: border-box;
+    align-self: center;
+    margin-left: 60px;
+}
+
+#header-logo{
+    width: 18vh;
+}
+
+#nav-bar #nav{
+    width: 70%;
+    align-self: flex-end;
+    margin: 0px 25px 10px auto;
+}
+
+#nav-bar ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav-bar li{
+    display: block;
+    align-self: center;
+    padding: 10px;
+}
+
+#nav-bar a{
+    transition: all 0.35s;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+    overflow-wrap:normal;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+#nav-bar a:hover{
+    color: #CF2B3E;
+}
+
+li #nav-pedido{
+    padding: 10px 40px;
+    color:#CF2B3E;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+li #nav-pedido:hover{
+    background-color: #CF2B3E;
+    color:#F7F7F7;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CF2B3E;
+}
+
+/* --------------------- Conteúdo --------------------- */
+
+.content{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+/* --------------------- Imagem de Destaque --------------------- */
+
+.img-dest{
+    padding: 0.83em;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(../img/carrossel/pizza-destaque.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+
+.img-dest h1{
+    box-sizing: border-box;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    font-size: 9vh;
+    transition: all 0.35s;
+}
+
+.img-dest p{
+    font-size: 3.4vh;
+    color: #252323;
+    font-weight: 700;
+}
+
+.img-dest p b{
+    font-size: 3.4vh;
+    color:#CF2B3E;
+    transition: all 0.35s;
+}
+
+.img-dest p b:hover{
+    font-size: 3.6vh;
+}
+
+.img-dest a{
+    line-height: 18.5vh;
+    transition: all 0.35s;
+    text-decoration: none;
+    font-weight: bolder;
+    overflow-wrap: normal;
+    font-size: 2.3vh;
+    white-space: nowrap;
+    padding: 10px 50px;
+    color:#F7F7F7;
+    background-color: #CF2B3E;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CF2B3E;
+}
+
+.img-dest a:hover{
+    color:#CF2B3E;
+    background-color: transparent;
+}
+
+/* --------------------- Conteúdo Principal --------------------- */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+}
+
+main .main-content{
+    min-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.main-content h2{
+    font-weight: bold;
+    font-size: 48px;
+    color: black;
+}
+
+.main-content h2 img{
+    transition: all 0.35s;
+    width: 68px;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+
+.main-content h2 img:hover{
+    transform: scale(1.15);
+}
+
+.main-content p{
+    font-weight: 200;
+    font-size: 20px;
+    color: #252323;
+}
+
+.main-content li{
+    font-weight: bold;
+    font-size: 20px;
+    color: #252323;
+}
+
+main #promotions{
+    right: 0px;
+    max-width: 500px;
+    border-radius: 0 0 0 25px;
+    margin: 0 0 auto auto;
+    padding: 50px;
+    background-color: #CF2B3E;
+    color: #FFEDEF;
+    align-content: center;
+}
+
+/* --------------------- Tabela de Preços --------------------- */
+
+
+.main-content  table,td,th {
+    border: 1px solid #FFEDEF;
+    border-collapse: collapse;
+}
+
+.main-content table th{
+    min-width: 200px;
+    padding: 20px;
+    background-color: #CF2B3E;
+    color: #F7F7F7;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main-content table td{
+    text-align: center;
+    padding: 18px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #252323;
+    display: table-cell;
+    vertical-align: inherit;
+    box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
+    border-radius: 5px;
+}
+
+/* --------------------- Formulário de Login --------------------- */
+
+.main-content legend{
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.main-content fieldset{
+    border-color:#F7F7F7;
+    border-radius: 25px;
+}
+
+.main-content #login-form{
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main-content #login-form img{
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+.main-content .text-input input,textarea{
+    color: #252323;
+    font-family: inherit;
+    border-style: inset;
+    border-width: 1px;
+    min-width: 300px;
+    padding: 5px;
+    margin: 8px;
+    font-size: 16px;
+    border-color: #F7F7F7;
+}
+
+.main-content .text-input textarea{
+    min-height: 100px;
+    min-width: 400px;
+}
+
+#login-form #buttons {
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#login-form #btn-login{
+    width: 50%;
+    text-align: right;
+}
+
+#login-form #btn-clear{
+    width: 50%;
+    text-align: left;
+}
+
+#login-form #btn-clear input{
+    min-width: 150px;
+    margin-left: 5px;
+    transition: all 0.35s;
+    font-size: 18px;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 10px 20px;
+    color:#CF2B3E;
+    border: none;
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+}
+
+#login-form #btn-clear input:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#login-form #btn-clear input:enabled{
+    border: none;
+}
+
+#login-form #btn-login input{
+    display: initial;
+}
+
+#login-form a{
+    transition: all 0.35s;
+    text-decoration: none;
+    color:#252323;
+}
+
+#login-form a:hover{
+    text-decoration: underline;
+}
+
+/* --------------------- Formulário de Mensagem --------------------- */
+
+#message-form{
+    text-align:start;
+}
+
+#message-send{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --------------------- Map --------------------- */
+
+#map{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#map iframe{
+    display: block;
+    width:100%;
+    height: 500px;
+    border: none;
+    margin: none;
+}
+
+#map address{
+    font-size: 16px;
+    text-align: center;
+    color: #252323;
+}
+
+/* --------------------- Formulário de Registro --------------------- */
+
+.main-content #register-form{
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #252323;
+}
+
+.main-content #register-form img{
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+#register-form #buttons {
+    display: flex;
+    margin: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#register-form #btn-register{
+    width: 50%;
+    text-align: right;
+}
+
+#register-form #btn-clear{
+    width: 50%;
+    text-align: left;
+}
+
+#register-form #btn-clear input{
+    min-width: 150px;
+    margin-left: 5px;
+    transition: all 0.35s;
+    font-size: 18px;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 10px 20px;
+    color:#CF2B3E;
+    border: none;
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+}
+
+#register-form #btn-clear input:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#register-form #btn-clear input:enabled{
+    border: none;
+}
+
+#register-form #btn-register input{
+    display: initial;
+}
+
+#register-form a{
+    transition: all 0.35s;
+    text-decoration: none;
+    color:#252323;
+}
+
+#register-form a:hover{
+    text-decoration: underline;
+}
+
+.check-input{
+    margin-top: 20px;
+}
+
+/* --------------------- Promoções --------------------- */
+
+#promotions h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#promotions p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#promotions #moto-img{
+    transition: all 0.35s;
+    width: 25%;
+    margin: 100px auto;
+    display: block;
+}
+
+#promotions #moto-img:hover{
+    transform: scale(1.1);
+}
+
+/* --------------------- Rodapé --------------------- */
+
+footer{
+    background-color: #F7F7F7;
+}
+
+#social{
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+#social img{
+    transition: all 0.35s;
+    width: 100px;
+    margin: 0 20px;
+}
+
+#social img:hover{
+    transform: scale(1.1);
+}
+
+footer #infos{
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 50px auto;
+    vertical-align: center;
+}
+
+footer #infos #footer-logo{
+    width: 160px;
+}
+
+footer #infos #logo{
+    margin: auto 40px auto auto;
+    width: 50vw;
+    text-align: end;
+}
+
+footer #infos #text{
+    margin: 0px auto auto 40px;
+    width: 50vw;
+}
+
+#copy{
+    width: 100%;
+    text-align: center;
+    background-color: #252323;
+    color: #F7F7F7;
+    padding: 1px;
+    bottom: 0;
+}
+
+#copy a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F7F7F7;
+}
+
+#chat{
+    bottom: -400px;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    background-color: white;
+    box-shadow: rgb(6 19 43 / 25%) 0px 0px 3px, rgb(6 19 43 / 3%) 3px 3px 3px, rgb(6 19 43 / 3%) 3px 0px 6px, rgb(6 19 43 / 4%) -2px 2px 5px, rgb(6 19 43 / 2%) 3px 2px 5px, rgb(6 19 43 / 1%) 0px 2px 2px;
+    border-radius: 15px 15px 0px 0px;
+    transition: 0.4s;
+}
+
+#chat.minimized{
+    transform: translateY(337px);
+}
+
+#chat.closed{
+    transform: translateY(400px);
+}
+
+#chat #header{
+    color: #F7F7F7;
+    padding: 1px 15px;
+    background-color: #CF2B3E;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#chat #header h4{
+    width: 100%;
+}
+
+.close_button, .minimize_button{
+    border-radius: 25px;
+    transition: all 0.2s;
+    width: 23px;
+    margin-left: 3px;
+    text-align: center;
+    padding: 2px;
+}
+
+.close_button:hover, .minimize_button:hover{
+    cursor: pointer;
+    background-color: #F7F7F7;
+    color: #CF2B3E;
+}
+
+#chat #content{
+    padding: 1px 15px;
+    height: 67%;
+}
+
+#message{
+    display: flex;
+    justify-content: space-between;
+}
+
+#message label{
+    width: 80%;
+    display: block;
+}
+
+#send_message {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: none;
+    width: 90%;
+}
+
+#send_button{
+    display: block;
+    width: 25px;
+    margin-right: 20px;
+}
+
+#send_button:hover{
+    cursor: pointer;
+}
+
+#chat_button{
+    width: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 20px;
+    background-color: #CF2B3E;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgb(6 19 43 / 25%) 0px 0px 3px;
+    transition: all 0.4s;
+}
+
+#chat_button.hide{
+    display: none;
+}
+
+#chat_button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#chat_button p{
+    display: block;
+    margin: 0px;
+    color: #F7F7F7;
+    font-weight: bold;
+}
+
+#chat_button img{
+    width: 20px;
+}
+
+#whatsapp_button{
+    display: none;
+}
+
+select#size_pizza{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+select#size_pizza:focus{
+    outline-style: none;
+}
+
+#order{
+    display: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flavor{
+    transition: all 0.35s;
+    padding: 30px;
+    border-style: solid;
+    border-color:#CF2B3E;
+    border-width: 1px;
+    border-radius: 25%;
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+    height: 230px;
+}
+
+.flavor:hover{
+    cursor: pointer;
+    box-shadow: rgb(6 19 43 / 20%) 0px 0px 15px;
+}
+
+.flavor_selected{
+    transition: all 0.35s;
+    padding: 30px;
+    border-style: solid;
+    border-color:#CF2B3E;
+    border-width: 1px;
+    border-radius: 25%;
+    margin: 10px;
+    text-align: center;
+    background-color: #CF2B3E;
+    color: #F7F7F7;
+    width: 180px;
+    height: 230px;
+}
+
+.flavor input[type = "checkbox"], .flavor_selected input[type = "checkbox"]{
+    display: none;  
+}
+
+.flavor_img{
+    text-align: center;
+}
+
+.flavor_img img{
+    border-radius: 50%;
+    border: 3px solid #F7F7F7;
+}
+
+.flavor_description{
+    margin-top: 20px;
+}
+#btn-cart{
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px){
+    #nav-bar {
+        height: 16vh;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .img-dest{
+        height: 84vh;
+    }
+
+    .content{
+        margin-top: 16vh;
+    }
+
+    #nav-bar #nav{
+        width: 100%;
+        align-self: center;
+        margin: 0;
+    }
+
+    #nav{
+        width: 100%;
+        transform: translateX(-110vw);
+        transition: 0.4s;
+        background-color: #F7F7F7;
+    }
+
+    #nav.show {
+        transform: translateX(0px);
+        transition: 0.4s;
+    }
+
+    header{
+        display: flex;
+        height: 95%;
+        box-sizing: border-box;
+        align-self: flex-end;
+        margin: auto 10px auto auto;
+        align-items: flex-end;
+    }
+
+    #header-logo{
+        width: auto;
+        height: 13vh;
+    }  
+
+    #nav nav{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    #nav-bar ul{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+
+    .toggle {
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #F7F7F7;
+        margin: 0;
+        align-self: flex-end;
+    }
+      
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color:#CF2B3E;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 25px;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    section.main-content{
+        max-width: 100%;
+        min-width: 0px;
+    }
+
+    #social img{
+        margin: 0 15px;
+    }
+
+    .main-content table th{
+        min-width: 150px;
+        font-size: 18px;
+    }
+    
+    .main-content table td{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .content{
+        margin-bottom: 0;
+    }
+
+    .img-dest h1{
+        font-size: 40px;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    main .main-content{
+        padding: 20px;
+    }
+
+    main #promotions{
+        border-radius: 0;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .main-content h2{
+        font-size: 26px;
+    }
+    
+    .main-content h2 img{
+        width: 40px;
+    }
+
+    .main-content p{
+        font-size: 16px;
+    }
+
+    .main-content li{
+        font-size: 16px;
+    }
+
+    #promotions h3{
+        font-size: 22px;
+    }
+    
+    #promotions p{
+        font-size: 14px;
+    }
+    
+    #promotions #moto-img{
+        width: 40%;
+        margin: 30px auto;
+    }
+
+    footer #infos{
+        font-size: 12px;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+    
+    footer #infos #footer-logo{
+        width: 18vh;
+    }
+    
+    footer #infos #logo{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    footer #infos #text{
+        width: 100%;
+        margin: 0;
+        text-align: center;    
+    }
+    
+    #copy{
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    #copy a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #F7F7F7;
+    }
+
+    #social{
+        display: none;
+    }
+
+    div#infos{
+        padding: 30px;
+        margin: 0;
+    }
+
+    /* ------------ Tabela de Preços ------------ */
+
+    table{
+        margin: auto;
+        min-width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .main-content table th{
+        min-width: 0px;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .main-content table td{
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .main-content legend{
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* ------------ Formulário de Login ------------ */
+    
+    .main-content #login-form{
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .main-content #login-form img{
+        width: 20px;
+    }
+    
+    .main-content .text-input input,textarea{
+        width: 70%;
+        min-width: 100px;
+        max-width: 300px;
+        padding: 3px;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .main-content .text-input textarea{
+        width: 90%;
+        min-width: 100px;
+        max-width: 300px;
+    }
+    
+    #login-form #buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 18px 0;
+    }
+    
+    #login-form #btn-login{
+        width: auto;
+        text-align: center;
+    }
+    
+    #login-form #btn-clear{
+        width: auto;
+        text-align: center;
+    }
+    
+    #login-form #btn-clear input{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    #login-form #btn-login input{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    /* --------------------- Formulário de Mensagem --------------------- */
+    
+    #message-form{
+        text-align:start;
+    }
+    
+    #message-send{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-default input{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* --------------------- Map --------------------- */
+
+    #map iframe{
+        width:100%;
+        height: 40vh;
+    }
+
+    #map address{
+        font-size: 14px;
+    }
+
+    /* --------------------- Formulário de Cadastro --------------------- */
+
+    .main-content #register-form{
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .main-content #register-form img{
+        width: 20px;
+    }
+    
+    #register-form #buttons {
+        flex-direction: column;
+        align-items: center;
+        margin: 18px 0;
+    }
+    
+    #register-form #btn-register{
+        width: auto;
+        text-align: center;
+    }
+    
+    #register-form #btn-clear{
+        width: auto;
+        text-align: center;
+    }
+    
+    #register-form #btn-clear input{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    #register-form #btn-register input{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    .check-input{
+        margin-top: 20px;
+    }
+
+    #chat, #chat_button{
+        display: none;
+    }
+
+    #whatsapp_button{
+        width: 80px;
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+        padding: 10px;
+        background-color: #57cd63;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: rgb(6 19 43 / 25%) 0px 0px 3px;
+        transition: all 0.4s;
+        align-items: center;
+    }
+    
+    #whatsapp_button:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    #whatsapp_button p{
+        display: block;
+        font-size: 12px;
+        margin: 0px;
+        color: #F7F7F7;
+        font-weight: bold;
+    }
+    
+    #whatsapp_button img{
+        width: 18px;
+    }
+
+    #whatsapp_buton a{
+        display: block;
+    }
+}
