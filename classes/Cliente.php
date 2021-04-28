@@ -8,7 +8,7 @@
         private $senha;
         private $confirmSenha;
         private $bairro;
-        private $endereço;
+        private $endereco;
 
         public function getCodigo(){
             return $this->codigo;
@@ -58,14 +58,14 @@
         public function setBairro($bairro){
             $this->bairro = $bairro;
         }
-        public function getEndereço(){
-            return $this->endereço;
+        public function getEndereco(){
+            return $this->endereco;
         }
-        public function setEndereço($endereço){
-            $this->endereço = $endereço;
+        public function setEndereco($endereco){
+            $this->endereco = $endereco;
         }
 
-        public function validade(){
+        public function validate(){
             $erros = array();
             if(empty($this->getNome())){
                 $erros[] = "É necessário informar um Nome";

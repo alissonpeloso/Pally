@@ -4,7 +4,8 @@
                 <h2><?=$titulo ?></h2>
                 <hr>
                 <br><br>
-                <p>| <a href="saborController.php?action=cadastra">inserir novo</a> |</p>
+                <p>| <a href="saborController.php?action=cadastra">Inserir Novo</a> |</p>
+                <div class="table">
                 <table>
                 <tr>
                     <th>Código</th>
@@ -35,6 +36,7 @@
                 }
                 ?>
                 </table>
+                </div>
             </section>
         </main>
     </div>

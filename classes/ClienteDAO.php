@@ -37,13 +37,13 @@
 
         public function inserir(Cliente $cliente){
             try {
-                $query = $this->conexao->prepare("insert into cliente values (NULL, :n, :e, :t, :dn, :s, :end, :b)");
+                $query = $this->conexao->prepare("insert into cliente (codigo, nome, email, telefone, dataNascimento, senha, endereco, bairro) values (NULL, :n, :e, :t, :dn, :s, :end, :b)");
                 $query->bindValue(":n", $cliente->getNome());
                 $query->bindValue(":e", $cliente->getEmail());
-                $query->bindValue(":e", $cliente->getTelefone());
+                $query->bindValue(":t", $cliente->getTelefone());
                 $query->bindValue(":dn", $cliente->getDataNascimento());
                 $query->bindValue(":s", $cliente->getSenha());
-                $query->bindValue(":end", $cliente->getEndereço());
+                $query->bindValue(":end", $cliente->getEndereco());
                 $query->bindValue(":b", $cliente->getBairro());
 
                 return $query->execute();
@@ -58,10 +58,10 @@
                 $query = $this->conexao->prepare("update cliente set nome = :n, email = :e, telefone = :t, dataNascimento = :dn, senha = :s, endereco = :end, bairro = :b");
                 $query->bindValue(":n", $cliente->getNome());
                 $query->bindValue(":e", $cliente->getEmail());
-                $query->bindValue(":e", $cliente->getTelefone());
+                $query->bindValue(":t", $cliente->getTelefone());
                 $query->bindValue(":dn", $cliente->getDataNascimento());
                 $query->bindValue(":s", $cliente->getSenha());
-                $query->bindValue(":end", $cliente->getEndereço());
+                $query->bindValue(":end", $cliente->getEndereco());
                 $query->bindValue(":b", $cliente->getBairro());
 
                 return $query->execute();

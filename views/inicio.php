@@ -8,7 +8,7 @@
 
     <main>
         <section class="main-content">
-            <h2> <img src="img/icons/book.png" alt="book.png"> Nossa História</h2>
+            <h2> <img src="assets/img/icons/book.png" alt="book.png"> Nossa História</h2>
             <p>Tudo começou numa sexta-feira, a história da Pally começou!</p>
             <p>A nível organizacional, a consulta aos diversos militantes ainda não demonstrou convincentemente que vai participar na mudança da gestão inovadora da qual fazemos parte.</p>
             <p>Do mesmo modo, a contínua expansão de nossa atividade maximiza as possibilidades por conta dos modos de operação convencionais.</p>

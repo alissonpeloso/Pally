@@ -49,6 +49,7 @@ input,textarea:focus{
     box-shadow: 0 8px 25px 0 rgb(0 0 0 / 4%);
     box-sizing: content-box;
     position: fixed;
+    z-index: 3;
 }
 
 header{

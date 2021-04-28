@@ -7,8 +7,12 @@
     <meta name="author" content="Alisson Luan de Lima Peloso">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon/favicon.ico"/>
-    <title>Pally | Home</title>
+    <title>Pally | Admin</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        section.main-content {width: 100%; margin: 0px;max-width: 100%;}
+        div.table {overflow-x: scroll;}
+    </style>
 </head>
 
 <body>
