@@ -55,7 +55,7 @@
 
                 <div class="text-input"> 
                     <label for="confirm-password"><img src="../assets/img/icons/padlock.png" alt="password.png"> </label>
-                    <input type="password" id="confirm-password_register" name="field_confirm-password" placeholder="Confirme sua senha" value="<?=$confirmsenha?>"><br>
+                    <input type="password" id="confirm-password_register" name="field_confirm-password" placeholder="Confirme sua senha"><br>
                 </div>
 
                 <div class="text-input"> 
